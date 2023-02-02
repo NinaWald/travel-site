@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #e4cda1;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  
+  }
+  
+  header{
+    
+    position:relative;
+  }
+  
+  .back-video{
+    width: 100%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    z-index: -1;
+    
+  }
+  
+  .title {
+    position:absolute;
+    font-family: 'Times New Roman', Times, serif;
+    top: 30%;
+    left: 0px;
+    color:white;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .main > section, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  
+  .form{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 40px;
+    
+  }
+
+  .accordion{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 40px;
+    
+  }
+  
+  input{
+  
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+  }
+  
+  .fox-breed{
+    color: rgb(211, 112, 36);
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  button{
+    color: rgb(211, 112, 36);
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    font-size: 14px;
+  
+  }
+  
+  
+  
+  .question-hidden{
+    font-size: 26px;
+    padding: 10px;
+    margin: 5px;
+    
+  }
+  
+  h2{
+    font-size: 50px;
+    text-align: center;
+   
+  }
+  
+  .answer {
+    display: none;
+    font-size: 20px;
+    margin-left:5px;
+  }
+  
+  .active + .answer {
+  display: block;
+  }
+  
+  @media (min-width:600px) and (max-width:767px){
+    .title{
+      font-size: 30px;
+      top: 35%;
+    }
+
+    .main  {
+        flex-direction: row;
+    }
+  }
+  
+  @media (min-width:768px) and (max-width:1023px){
+    .title{
+      font-size: 60px;
+      top: 30%;
+    }
+    .main {
+        flex-direction: row;
+    }
+  }
+  
+  @media (min-width:1024px){
+    .title{
+      font-size: 80px;
+      top: 38%;
+    }
+    .main  {
+        flex-direction: row;
+    }
+  }
